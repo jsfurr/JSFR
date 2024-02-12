@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="logoo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 200;
+            color: white;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(46, 46, 46);
+            z-index: 2;
+        }
+
+        .logo-container {
+            margin-left: 20px;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .tagline {
+            font-size: 1rem;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            margin-right: 20px;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 30px 20px 0;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #f9fff8;
+            transition: color 0.1s, font-size 0.1s;
+        }
+
+        ul li a:hover {
+            font-size: 1.1rem;
+            color: #414141;
+        }
+
+        .middlebody {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .imgoverlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .Text {
+            color: #ffffff;
+            font-size: 3rem;
+            height: 60px;
+            position: absolute;
+            bottom: 5rem;
+            width: 100%;
+            text-align: center;
+            position: relative;
+            bottom: 50rem;
+        }
+
+        p {
+            font-size: 1rem;
+            width: 80%;
+            margin: 10px auto;
+            text-align: center;
+            font-weight: 550;
+        }
+
+        .btn-container {
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #A2A96D;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #212121;
+        }
+
+        #section2 {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-family: Poppins;
+            margin-top: 80px;
+        }
+
+        .social-icons {
+            font-size: 2rem;
+            margin-right: 10px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            ul li,
+            .tagline {
+                display: none;
+            }
+        }
+        .social-icons {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;  
+}
+
+.social-icons:hover {
+    color: #33380f;  
+}
+    </style>
+    <title>JSFR</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo"><i class="fas fa-cat"></i> JSFR</div>
+            <div class="tagline"></div>
+        </div>
+
+        <ul>
+            <li><a href="#section1">Home</a></li>
+            <li><a href="#section2">Socials</a></li>
+        </ul>
+    </header>
+
+    <section id="section1">
+        <div class="middlebody">
+            <img src="pic.jpg" alt="" class="section-img">
+            <div class="imgoverlay"></div>
+        </div>
+
+        <div class="Text">
+            <h1>Hi Alon, it’s me Tabby😺</h1>
+        </div>
+
+        <p>-Thank You-</p>
+
+    </section>
+
+    <section id="section2">
+        <h1>SOCIALS:</h1>
+
+        <a href="https://www.instagram.com/jsfrr.s/" target="_blank" class="social-icons">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.facebook.com/jesfer.b.saco" target="_blank" class="social-icons">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+    </section>
+
+    <footer class="footer" style="font-size: 10px;">
+        &copy; 2024 JSFR | Designed by JSFR
+    </footer>
+    
+</body>
+
+</html>
